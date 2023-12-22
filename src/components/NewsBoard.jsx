@@ -16,7 +16,7 @@ const NewsBoard = ({category}) => {
       })
       .then((data) => setArticles(data.articles))
       .catch((error) => console.error('Error fetching data:', error));
-  }, []);
+  }, [category]);
 
   return (
     <div>
